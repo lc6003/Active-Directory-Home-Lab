@@ -1,46 +1,93 @@
 # Active-Directory-Home-Lab
 
-## 1/20/2026
+### Active Directory Configuration (1/20/2026)
 
-Downloaded VirtualBox
-Set up VirtualBox with Windows 11 and Server2022
-Downloaded and setup ActiveDirectory
+**User Account Management:**
+- Created domain user accounts
+- Configured user profile paths
+- Reset user passwords
+- Disabled/enabled user accounts
+- Set account expiration dates
+- Configured logon hours restrictions
+- Locked and unlocked user accounts
 
-Learned how to create a sharedfolder
-Create a user 
-Set up the profile for the user, learned how to reset password and disable user account
-Learned how to lock/unlock account, track user hours on when they can log in/log off and manage their logon hours through active directory users and computers
+**Example:** Created test user "Jason" to practice account management procedures
 
-Ex:
-Created a user called Jason and learned how to reset password and disable jason's account
-Learned how track jason's hours and manage which hours jason can log on 
+### Domain Integration (1/23/2026)
 
-Shown in Screenshot#1 and 2
+**Client Setup:**
+- Joined Windows 11 machine to Server 2022 domain
+- Tested user authentication from domain-joined client
+- Configured Remote Desktop access to domain controller
 
-## 1/23/2026
+**Help Desk Troubleshooting Scenarios:**
 
-Installed Windows 11
-Learned how to join our Server 2022 Domain from a Windows 11 Machine
-Learned how to login in as one of the users created on our Server 2022
-Learned how to remote connect to Server 2022 as a user
-Replicated a ticket where the user's account is disabled, user's account is expired
-Learned how to manage when the user can login through active directory users and computers
-Learned how to set Group Policy's through Group Policy Management, and setup default domain policy for password policy and account lockout policy to match IT industry standards
+Simulated and resolved three common login issues:
 
-Ex:
-Jason is unable to log in, but there is 3 different types of error message
-Editing Group Policies
+1. **Disabled Account Error**
+   - User attempted login with disabled account
+   - Identified issue via error message
+   - Re-enabled account through ADUC
 
-Shown in 
-Screenshot#3
-when the user tries to log in but their account is disabled
+2. **Logon Hours Violation**
+   - User tried logging in outside permitted hours
+   - Diagnosed logon hours restriction
+   - Adjusted user logon hours settings
 
-Screenshot#4
-when the user tries to log in but its is not their time to log in 
+3. **Expired Account**
+   - User account expiration prevented login
+   - Extended account expiration date
+   - Verified successful authentication
 
-Screenshot#5
-when the user's account is expired 
+**Group Policy Implementation:**
 
-Screenshot#6 and 7 show the setting up the group polcies for password and account lockout
+Created and configured Default Domain Policy for:
 
+- **Password Policy:**
+  - Minimum password length
+  - Password complexity requirements
+  - Password history
+  - Maximum password age
 
+- **Account Lockout Policy:**
+  - Account lockout threshold
+  - Account lockout duration
+  - Reset lockout counter timer
+
+### File Sharing & Permissions (1/25/2026)
+
+**Shared Folder Configuration:**
+- Created shared folders via Server Manager
+- Configured NTFS permissions (Read, Modify, Full Control)
+- Mapped network drives for users
+
+**Security Group Management:**
+- Created security groups for folder access
+- Added users to security groups
+- Assigned permissions at group level instead of individual users
+- Reduced manual permission management overhead
+
+**Example:** Configured "Jason" with Modify permissions (not Full Control) on shared folder
+
+**Patch Management:**
+- Installed Action1 patch management tool
+- Generated system reports through Action1
+- Created audit documentation
+
+## Screenshots
+
+**Screenshot 1 & 2:** User account creation and management (password reset, account disable, logon hours)
+
+**Screenshot 3:** Account disabled error message
+
+**Screenshot 4:** Logon hours restriction error
+
+**Screenshot 5:** Expired account error
+
+**Screenshot 6 & 7:** Group Policy configuration (password policy and account lockout policy)
+
+**Screenshot 8:** NTFS folder permissions (Modify access for Jason)
+
+**Screenshot 9:** Network drive mapping
+
+**Screenshot 10:** Security group creation and user assignment
