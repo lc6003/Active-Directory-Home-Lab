@@ -74,6 +74,25 @@ Created and configured Default Domain Policy for:
 - Generated system reports through Action1
 - Created audit documentation
 
+### Advanced Group Policy Configuration (1/27/2026)
+
+- **Shutdown/Restart Restrictions**
+  - Blocked shutdown and restart buttons from Start menu
+  - Prevents users from powering down workstations during business hours
+
+- **Password Management Control**
+  - Removed "Change Password" option from Ctrl+Alt+Del menu
+  - Enforces centralized password change procedures through help desk
+
+- **Lock Computer Restriction**
+  - Disabled ability to lock computer via Ctrl+Alt+Del
+  - Controls workstation security through policy
+
+- **Task Manager Access Control**
+  - Removed access to Task Manager
+  - Prevents users from terminating critical processes or viewing system information
+
+
 ## Screenshots
 
 **Screenshot 1 & 2:** User account creation and management (password reset, account disable, logon hours)
@@ -91,3 +110,5 @@ Created and configured Default Domain Policy for:
 **Screenshot 9:** Network drive mapping
 
 **Screenshot 10:** Security group creation and user assignment
+
+**Screenshot 11 & 12:** Advanced Group Policy settings (desktop restrictions: shutdown/restart block, password change removal, lock computer removal, Task Manager access control)
