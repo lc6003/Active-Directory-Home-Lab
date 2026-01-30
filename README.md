@@ -129,10 +129,10 @@ Created and configured Default Domain Policy for:
 
 **Screenshot 6 & 7:** Group Policy configuration (password policy and account lockout policy)
 
-**Screenshot 8:** NTFS folder permissions (Modify access for Jason)
-
-**Screenshot 9:** Network drive mapping
+**Screenshot 8 & 9:** NTFS folder permissions (Modify access for Jason)
 
 **Screenshot 10:** Security group creation and user assignment
 
 **Screenshot 11 & 12:** Advanced Group Policy settings (desktop restrictions: shutdown/restart block, password change removal, lock computer removal, Task Manager access control)
+
+**Screenshot 13** Joining Domain
