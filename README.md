@@ -25,6 +25,8 @@
 - Tested user authentication from domain-joined client
 - Configured Remote Desktop access to domain controller
 
+<img width="410" height="462" alt="Screenshot13" src="https://github.com/user-attachments/assets/91862e7c-dbd2-4f04-80ea-ee92ea74e241" />
+
 **Help Desk Troubleshooting Scenarios:**
 
 Simulated and resolved three common login issues:
@@ -135,4 +137,4 @@ Created and configured Default Domain Policy for:
 
 **Screenshot 11 & 12:** Advanced Group Policy settings (desktop restrictions: shutdown/restart block, password change removal, lock computer removal, Task Manager access control)
 
-**Screenshot 13** Joining Domain
+**Screenshot 13:** Windows 11 Machine join the domain
